@@ -1,0 +1,70 @@
+
+  
+/*
+Fond = #2e5849
+Fond Input = #1c382f
+Bordure Input = #183129
+Ombre interne Input = 25px rgba(0,0,0,.1)
+Ombre interne Input Focus = 25px rgba(0,0,0,.5)
+Texte Input = #fff
+Placeholder Input = rgba(255, 255, 255, .5)
+Fond Tâche = #eee
+Bordure tâche = #ccc
+*/
+
+body {
+    background-color: #2e5849;
+    color: white;
+  }
+  
+  #todo {
+    width: 90%;
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+  
+  .form {
+    margin-bottom: 5rem;
+  }
+  
+  .form__input {
+    width: 100%;
+    padding: 2rem;
+    background-color: #1c382f;
+    border: 1px solid #183129;
+    box-shadow: inset 0 0 25px rgba(0,0,0,.1);
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .form__input:focus {
+    box-shadow: inset 0 0 25px rgba(0,0,0,.5);
+  }
+  
+  .form__input::placeholder {
+    color: rgba(255,255,255,.5);
+  }
+  
+  .counter {
+    font-size: 1.8em;
+    border-bottom: 1px solid;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .task {
+    color: black;
+    padding: 1.5rem;
+    font-size: 1.2em;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: .5rem;
+  }
+  
+  .task--done {
+    opacity: .5;
+    text-decoration: line-through;
+  }
